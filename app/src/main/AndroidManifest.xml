@@ -1,0 +1,35 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppAgricola"> <!-- Tema general de la aplicación -->
+
+        <!-- SplashActivity configurada como Launcher con tema exclusivo -->
+        <activity
+            android:name=".Model.SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppAgricola.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- MainActivity que se abrirá después del splash -->
+        <activity
+            android:name=".Model.MainActivity"
+            android:exported="true" />
+
+        <!-- Otras actividades de la aplicación -->
+        <activity android:name=".Model.ActivityHistorial" android:exported="false" />
+        <activity android:name=".Model.ActivitySensores" android:exported="false" />
+        <activity android:name=".Model.ActivityUbicaciones" android:exported="false" />
+        <activity android:name=".Model.ActivityListaSensores" android:exported="false" />
+        <activity android:name=".Model.ActivityBuscar" android:exported="false" />
+    </application>
+
+</manifest>

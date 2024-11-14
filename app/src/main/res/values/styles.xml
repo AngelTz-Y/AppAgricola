@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Tema principal de la aplicación sin referencia a colorPrimary -->
+    <style name="Theme.AppAgricola" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Colores y estilo general para la aplicación -->
+        <item name="android:colorBackground">@color/backgroundColor</item> <!-- Fondo para el resto de la app -->
+    </style>
+
+    <!-- Tema exclusivo para la pantalla de carga (Splash) -->
+    <style name="Theme.AppAgricola.Splash" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Colores solo para el splash -->
+        <item name="android:windowBackground">@color/primaryColor</item> <!-- Fondo del splash -->
+        <item name="android:statusBarColor">@color/primaryColor</item>
+        <item name="android:navigationBarColor">@color/primaryColor</item>
+    </style>
+
+</resources>

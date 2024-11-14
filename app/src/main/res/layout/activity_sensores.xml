@@ -1,0 +1,162 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#F9F9F9"
+    tools:context=".Model.ActivitySensores">
+
+    <!-- Título Principal -->
+    <TextView
+        android:id="@+id/tituloSensoresTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingresar Sensor"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#1E88E5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Label para Ubicación -->
+    <TextView
+        android:id="@+id/labelUbicacionSensor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seleccione la Ubicación del Sensor:"
+        android:textColor="#666666"
+        android:layout_below="@id/tituloSensoresTextView"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="4dp" />
+
+    <!-- Spinner para Ubicación del Sensor -->
+    <Spinner
+        android:id="@+id/ubicacionSensorSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#DADADA"
+        android:layout_below="@id/labelUbicacionSensor"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Campo de Nombre del Sensor -->
+    <TextView
+        android:id="@+id/labelNombreSensor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre del Sensor:"
+        android:textColor="#666666"
+        android:layout_below="@id/ubicacionSensorSpinner"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="4dp" />
+
+    <EditText
+        android:id="@+id/editTextNombreSensor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese el nombre del sensor"
+        android:padding="12dp"
+        android:backgroundTint="#DADADA"
+        android:textColor="#333333"
+        android:layout_below="@id/labelNombreSensor"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Campo de Descripción del Sensor -->
+    <TextView
+        android:id="@+id/labelDescripcionSensor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Descripción del Sensor:"
+        android:textColor="#666666"
+        android:layout_below="@id/editTextNombreSensor"
+        android:layout_marginStart="4dp" />
+
+    <EditText
+        android:id="@+id/editTextDescripcionSensor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese la descripción del sensor"
+        android:padding="12dp"
+        android:backgroundTint="#DADADA"
+        android:textColor="#333333"
+        android:layout_below="@id/labelDescripcionSensor"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Campo para el Valor Ideal -->
+    <TextView
+        android:id="@+id/labelValorIdeal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Valor Ideal:"
+        android:textColor="#666666"
+        android:layout_below="@id/editTextDescripcionSensor"
+        android:layout_marginStart="4dp" />
+
+    <EditText
+        android:id="@+id/editTextIdealSensor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese el valor ideal"
+        android:padding="12dp"
+        android:backgroundTint="#DADADA"
+        android:textColor="#333333"
+        android:inputType="numberDecimal"
+        android:layout_below="@id/labelValorIdeal"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Spinner para Tipo de Sensor -->
+    <TextView
+        android:id="@+id/labelTipoSensor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seleccione el Tipo de Sensor:"
+        android:textColor="#666666"
+        android:layout_below="@id/editTextIdealSensor"
+        android:layout_marginStart="4dp" />
+
+    <Spinner
+        android:id="@+id/tipoSensorSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#DADADA"
+        android:layout_below="@id/labelTipoSensor"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Contenedor Horizontal para Botones -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/tipoSensorSpinner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp">
+
+        <!-- Botón Guardar -->
+        <Button
+            android:id="@+id/buttonGuardarSensor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Guardar"
+            android:backgroundTint="#6200EE"
+            android:textColor="#FFFFFF"
+            android:drawableLeft="@drawable/ic_guardar"
+            android:textSize="16sp"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:layout_marginEnd="8dp" />
+
+        <!-- Botón Buscar -->
+        <Button
+            android:id="@+id/buttonBuscarSensor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buscar"
+            android:backgroundTint="#6200EE"
+            android:textColor="#FFFFFF"
+            android:drawableLeft="@drawable/ic_buscar"
+            android:textSize="16sp"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+</RelativeLayout>

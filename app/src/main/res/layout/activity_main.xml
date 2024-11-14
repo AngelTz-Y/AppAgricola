@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA"
+    tools:context=".Model.MainActivity">
+
+    <!-- Encabezado -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aplicacion Agricola"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:textColor="#000000"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buenas tardes, Usuario."
+        android:textSize="16sp"
+        android:fontFamily="sans-serif"
+        android:textColor="#666666"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Botón Gestionar Ubicaciones -->
+    <Button
+        android:id="@+id/btnUbicaciones"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Gestionar ubicaciones"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:drawableLeft="@drawable/ic_locacion"
+        android:drawablePadding="8dp"
+        android:fontFamily="sans-serif-medium"
+        android:background="@drawable/rounded_orange_button"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/subtitle" />
+
+    <!-- Botón Gestionar Sensores -->
+    <Button
+        android:id="@+id/btnSensores"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Gestionar sensores"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:drawableLeft="@drawable/ic_sensor"
+        android:drawablePadding="8dp"
+        android:fontFamily="sans-serif-medium"
+        android:background="@drawable/rounded_orange_button"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnUbicaciones" />
+
+    <!-- Botón Ver Historial -->
+    <Button
+        android:id="@+id/btnHistorial"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Ver historial"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:drawableLeft="@drawable/ic_historial"
+        android:drawablePadding="8dp"
+        android:fontFamily="sans-serif-medium"
+        android:background="@drawable/rounded_orange_button"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnSensores" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

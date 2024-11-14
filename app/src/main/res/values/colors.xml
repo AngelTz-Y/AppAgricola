@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primaryColor">#4CAF50</color> <!-- Color exclusivo para el splash -->
+    <color name="white">#FFFFFF</color> <!-- Color de texto en el splash -->
+    <color name="backgroundColor">#F5F5F5</color> <!-- Fondo para el resto de la app -->
+</resources>
